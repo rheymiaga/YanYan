@@ -1,4 +1,4 @@
-import car from '../../../assets/carTemplate.webp'
+
 
 export const HomePage = () => {
 

@@ -109,11 +109,14 @@ export const NavBar = () => {
                     </div>
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="w-10 h-10 relative cursor-pointer z-50 flex items-center justify-center"
+                        className="w-10 h-10 relative cursor-pointer z-999 flex items-center justify-center"
                     >
-                        <span className="absolute top-[25%] right-0 h-0.5 w-[50%] bg-white"></span>
-                        <span className="absolute top-[50%] right-0 h-0.5 w-[75%] bg-white"></span>
-                        <span className="absolute top-[75%] right-0 h-0.5 w-full bg-white"></span>
+                        <span className={`absolute top-[25%] right-0 h-0.5 transition-all duration-500 transform bg-white 
+                            ${isOpen ? '-rotate-45 w-full translate-y-2' : 'translate-0 w-[50%]'}`}></span>
+                        <span className={`absolute top-[50%]  right-0 h-0.5 transition-all duration-500 transform bg-white 
+                            ${isOpen ? 'w-0 opacity-0' : 'translate-0 opacity-100 w-[75%]'}`}></span>
+                        <span className={`absolute top-[75%] w-full right-0 h-0.5 transition-all duration-500 transform bg-white 
+                            ${isOpen ? 'rotate-45 -translate-y-3' : 'translate-0 '}`}></span>
 
                     </button>
 

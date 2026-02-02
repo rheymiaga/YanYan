@@ -8,3 +8,40 @@
 .font-Inter {
     font-family: 'Inter', sans-serif;
 }
+
+
+/* LogoLoop.css */
+.logo-marquee {
+    /* fade mask on left/right */
+    -webkit-mask-image: linear-gradient(to right,
+            transparent 0%,
+            white 10%,
+            white 90%,
+            transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+
+    mask-image: linear-gradient(to right,
+            transparent 0%,
+            white 20%,
+            white 80%,
+            transparent 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+}
+
+.logo-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

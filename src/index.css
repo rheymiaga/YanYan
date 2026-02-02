@@ -12,11 +12,11 @@
 
 /* LogoLoop.css */
 .logo-marquee {
-    /* fade mask on left/right */
+
     -webkit-mask-image: linear-gradient(to right,
             transparent 0%,
-            white 10%,
-            white 90%,
+            white 20%,
+            white 80%,
             transparent 100%);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;

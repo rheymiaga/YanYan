@@ -33,8 +33,8 @@ export const HomePage = () => {
                     </div>
                 </div>
 
-                <div className='flex-1 mb-4 flex shrink-0 items-center justify-center mask-b-from-25% mask-t-from-50%'>
-                    <img className='w-max object-contain object-center'
+                <div className='flex-1 mb-4 flex shrink-0 items-center pointer-events-none justify-center mask-b-from-25% mask-t-from-50%'>
+                    <img className='w-max object-contain object-center pointer-events-none'
                         src={mazda} alt="mazda image" />
                 </div>
 

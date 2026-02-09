@@ -19,11 +19,12 @@ export const NavBar = () => {
                 <div className=" flex shrink-0 items-center max-w-7xl">
                     <img src={logo} alt="yan yan logo" className="h-12 md:h-16 lg:h-20" />
                 </div>
-                <div className=" flex gap-2 bg-black/50 border-gray-700 backdrop-blur-sm border-2 py-2 px-3 rounded-full divide-x divide-gray-400/30">
+                <div className=" flex gap-2 bg-black/50 border-gray-500/70 backdrop-blur-sm border-2 py-2 px-3 rounded-full divide-x divide-gray-400/30">
                     {NavBarLinks.map((Links) => (
                         <NavLink
                             key={Links.label}
                             to={Links.to}
+                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                             className={({ isActive }) => `group gap-1 flex py-2 px-3 font-Poppins font-medium
                              ${isActive
                                     ? ""
@@ -44,7 +45,7 @@ export const NavBar = () => {
                     ))}
                 </div>
                 <div className="flex items-center gap-8">
-                    <div className="group bg-black/40 rounded-full border-gray-500 border-2 relative transform transition-all duration-300">
+                    <div className="group bg-black/40 rounded-full border-gray-500/70 border-2 relative transform transition-all duration-300">
                         <a onMouseEnter={() => setHover(true)}
                             onMouseLeave={() => setHover(false)}
                             target="_blank"
@@ -135,9 +136,14 @@ export const NavBar = () => {
                             <h1 className=" text-amber-50 mb-2">Links</h1>
                             {NavBarLinks.map((links) => (
                                 <NavLink
+
                                     key={links.label}
                                     to={links.to}
-                                    onClick={() => setIsOpen(false)}
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                        window.scrollTo({ top: 0, behavior: "smooth" });
+                                    }}
+
                                     className={({ isActive }) => `flex py-2 px-3 gap-1 rounded text-amber-50 ${isActive ? ' bg-black/20' : ' bg-[1c1c1c] '}`}
                                 >
                                     <span>{links.icon}</span>

@@ -29,14 +29,14 @@ export const NavBarLinks = [
         to: '/'
     },
     {
-        label: 'About',
-        icon: <TbArrowRoundaboutRight />,
-        to: '/about'
-    },
-    {
         label: 'Services',
         icon: < FaScrewdriverWrench />,
         to: '/services'
+    },
+    {
+        label: 'About',
+        icon: <TbArrowRoundaboutRight />,
+        to: '/about'
     },
 
 ]

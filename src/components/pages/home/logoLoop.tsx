@@ -28,7 +28,7 @@ const logos = [
 
 export default function LogoLoop() {
     return (
-        <div className="logo-marquee overflow-hidden p-4 relative max-w-sm sm:max-w-xl md:max-w-4xl lg:max-w-6xl">
+        <div className="logo-marquee mb-4 mx-auto overflow-hidden p-4 relative max-w-sm sm:max-w-xl md:max-w-4xl lg:max-w-6xl">
             <div className="logo-track">
                 {logos.map((logo, i) => (
                     <img

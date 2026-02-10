@@ -17,7 +17,7 @@ export const Footer = () => {
                 <div className="flex items-center gap-4">
                     {/* Facebook */}
                     <a
-                        href="https://facebook.com"
+                        href="https://www.facebook.com/yan.yan.176563"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-3 rounded-full bg-gray-900 hover:bg-gray-800 transition"
@@ -27,7 +27,7 @@ export const Footer = () => {
 
                     {/* Gmail */}
                     <a
-                        href="mailto:yourshop@gmail.com"
+                        href="mailto:raylieraylie17@gmail.com"
                         className="p-3 rounded-full bg-gray-900 hover:bg-gray-800 transition"
                     >
                         <FaEnvelope className="text-white text-lg" />

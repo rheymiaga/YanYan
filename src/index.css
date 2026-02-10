@@ -10,20 +10,20 @@
 
 
 /* LogoLoop.css */
-.logo-marquee {
+.logo-marquee, .aboutDesc {
 
     -webkit-mask-image: linear-gradient(to right,
             transparent 0%,
-            white 20%,
-            white 80%,
+            white 30%,
+            white 70%,
             transparent 100%);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;
 
     mask-image: linear-gradient(to right,
             transparent 0%,
-            white 20%,
-            white 80%,
+            white 30%,
+            white 70%,
             transparent 100%);
     mask-repeat: no-repeat;
     mask-size: cover;

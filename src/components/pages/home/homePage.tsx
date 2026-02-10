@@ -31,7 +31,7 @@ export const HomePage = () => {
                     <h1 className="flex flex-col md:gap-2 tracking-widest brightness-125 
             md:tracking-wider text-[26px] md:text-4xl lg:text-5xl 
             font-serif bg-linear-to-r text-transparent from-slate-400 via-slate-200 to-slate-600 
-            bg-clip-text drop-shadow-[0px_0px_12px_rgba(100,100,100,0.6)] mb-4">
+            bg-clip-text drop-shadow-[0px_0px_12px_rgba(100,100,100,0.6)] mb-4 p-2">
                         <span>Yan-Yan's Electrical</span>
                         <span>& Vulcanizing Shop</span>
                     </h1>
@@ -41,14 +41,14 @@ export const HomePage = () => {
                     </p>
 
                     {/* Buttons */}
-                    <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <div className="flex flex-wrap flex-row justify-center lg:justify-start gap-4">
                         {/* Call Button */}
                         <motion.div
                             variants={fadeUp}
                             initial="hidden"
                             whileInView="visible"
                             exit="exit"
-                            transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }} // same as View Services
+                            transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
                             viewport={{ once: false }}
                         >
                             <a
@@ -63,14 +63,11 @@ export const HomePage = () => {
                                 <IoCall />
                                 <span className="font-Poppins">Call us now</span>
 
-                                {/* Hover shine effect */}
                                 <span className="absolute rotate-12 -translate-x-20 group-hover:translate-x-48 
       ease-in-out transform transition-all duration-700 
       bg-slate-50/25 brightness-125 w-10 h-[160%]"></span>
                             </a>
                         </motion.div>
-
-
 
                         <motion.div
                             variants={fadeUp}
@@ -105,6 +102,7 @@ export const HomePage = () => {
                     className="flex-1 flex justify-center items-center"
                 >
                     <img
+
                         className="max-w-xs md:max-w-md lg:max-w-lg object-contain object-center"
                         src={mazda}
                         alt="mazda image"

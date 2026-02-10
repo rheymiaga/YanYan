@@ -23,7 +23,7 @@ export const HomeAbout = () => {
         {
             icon: <FaClock className="text-purple-400 text-3xl" />,
             title: "Hours",
-            desc: "Open every day at 7:00 AM",
+            desc: "Open every day at 8:00 AM",
         },
         {
             icon: <FaPhoneAlt className="text-green-400 text-3xl" />,
@@ -101,6 +101,7 @@ export const HomeAbout = () => {
             >
                 <NavLink
                     to="/about"
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                     className="relative overflow-hidden group flex items-center gap-2 px-8 py-4 
             rounded-xl font-semibold text-lg md:text-xl 
             bg-linear-to-r from-gray-200 via-gray-400 to-gray-600 
@@ -110,7 +111,6 @@ export const HomeAbout = () => {
                 >
                     <CgDetailsMore className="text-xl group-hover:hidden transform transition-transform duration-300" />
                     Learn More
-                    {/* Shine effect */}
                     <span className="absolute rotate-12 -translate-x-20 group-hover:translate-x-48 
             ease-in-out transform transition-all duration-700 
             bg-white/25 brightness-125 w-12 h-[160%]"></span>

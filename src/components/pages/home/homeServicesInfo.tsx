@@ -1,5 +1,5 @@
 
-import { FaWrench, FaCogs, FaCar, FaMotorcycle, FaTruck } from "react-icons/fa";
+import { FaWrench, FaCogs, FaCar, FaTruck } from "react-icons/fa";
 import { IoMdContact } from "react-icons/io";
 
 
@@ -18,11 +18,6 @@ export const homeServicesInfo = [
         icon: <FaCar className="text-pink-400 text-3xl" />,
         title: "Automobile Services",
         desc: "Comprehensive electrical and mechanical services for cars, ensuring reliable performance.",
-    },
-    {
-        icon: <FaMotorcycle className="text-purple-400 text-3xl" />,
-        title: "Motorcycle Services",
-        desc: "Electrical wiring, battery replacement, and starter motor repairs for motorcycles.",
     },
     {
         icon: <FaTruck className="text-yellow-400 text-3xl" />,

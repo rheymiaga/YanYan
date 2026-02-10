@@ -8,12 +8,12 @@ export const Contacts = [
     {
         label: 'Facebook',
         icon: <FaFacebookSquare />,
-        link: 'facebook.com'
+        link: 'https://www.facebook.com/yan.yan.176563'
     },
     {
         label: 'Email',
         icon: <BiLogoGmail />,
-        link: 'mailto:mrheylouie@gmail.com'
+        link: 'mailto:raylieraylie17@gmail.com'
     },
     {
         label: 'Call',

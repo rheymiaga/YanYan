@@ -2,7 +2,7 @@ import { Contacts, NavBarLinks } from "./navBarLinks"
 import logo from '../../assets/yan-Logo.png'
 import location from '../../assets/location.png'
 import { IoMdContact } from "react-icons/io";
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { TbLocationExclamation, } from "react-icons/tb"
 import { useState } from "react"
 
@@ -12,13 +12,14 @@ export const NavBar = () => {
     const [openContact, setOpenContact] = useState(false)
 
     return (
-        <nav className=" w-full fixed top-0 left-0 z-50">
+        <nav className=" w-full fixed top-0 left-0 z-999">
 
             {/* Desktop Navbar*/}
             <div className="hidden md:flex items-center justify-around mt-2 mx-2">
-                <div className=" flex shrink-0 items-center max-w-7xl">
+                <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                    to={'/'} className=" flex shrink-0 items-center max-w-7xl">
                     <img src={logo} alt="yan yan logo" className="h-12 md:h-16 lg:h-20" />
-                </div>
+                </Link>
                 <div className=" flex gap-2 bg-black/50 border-gray-500/70 backdrop-blur-sm border-2 py-2 px-3 rounded-full divide-x divide-gray-400/30">
                     {NavBarLinks.map((Links) => (
                         <NavLink
@@ -104,10 +105,12 @@ export const NavBar = () => {
             </div>
             {/* Mobile Navbar*/}
             <div className="flex flex-col relative items-center md:hidden overflow-hidden">
-                <div className=" py-2 px-4 flex items-center justify-between w-full mx-4">
-                    <div className=" flex shrink-0 items-center">
+                <div
+                    className=" py-2 px-4 flex items-center justify-between w-full mx-4">
+                    <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        className=" flex shrink-0 items-center">
                         <img src={logo} alt="yan yan logo" className="h-14 sm:h-16" />
-                    </div>
+                    </Link>
                     <button
                         onClick={() => setIsOpen(!isOpen)}
                         className="w-10 h-10 relative cursor-pointer z-999 flex items-center justify-center"
